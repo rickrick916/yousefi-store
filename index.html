@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yousefi Store | یوسفی استور</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Project information modal -->
+  <div class="modal-backdrop" id="introModal">
+    <div class="intro-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeModal" aria-label="بستن">×</button>
+      <div class="uni-mark"><img src="assets/logo.png" alt="Yousefi Store"></div>
+      <div class="modal-kicker">دانشگاه آزاد اسلامی واحد آبادان</div>
+      <h1>طراحی و پیاده‌سازی<br>سیستم فروشگاه اینترنتی</h1>
+      <p class="modal-subtitle">پروژه نرم‌افزار · طراحی و تحلیل یک فروشگاه اینترنتی ایرانی</p>
+      <div class="student-card">
+        <div><span>استاد محترم</span><b>آقای امید رشنودی</b></div>
+        <div><span>دانشجو</span><b>ملیکا یوسفی</b></div>
+        <div><span>شماره دانشجویی</span><b>40215141054124</b></div>
+        <div><span>رشته</span><b>مهندسی کامپیوتر</b></div>
+        <div><span>درس</span><b>پروژه نرم افزار</b></div>
+      </div>
+      <button class="primary-btn modal-enter" id="enterStore">ورود به یوسفی استور <span>←</span></button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="topbar container">
+      <a class="brand" href="#home" data-page="home">
+        <span class="brand-logo"><img src="assets/logo.png" alt="Yousefi Store"></span>
+        <span><strong>Yousefi Store</strong><small>تجربه‌ای متفاوت در خرید</small></span>
+      </a>
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="searchInput" placeholder="نام محصول مورد نظر را جستجو کنید..." autocomplete="off">
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" data-page="login">♙ <span>ورود / ثبت‌نام</span></button>
+        <button class="cart-btn" data-page="cart">سبد خرید <b id="cartCount">۰</b></button>
+      </div>
+    </div>
+    <nav class="nav container">
+      <div class="category-btn">☰ دسته‌بندی محصولات</div>
+      <div class="nav-links">
+        <a href="#home" data-page="home" class="active">صفحه اصلی</a>
+        <a href="#products" data-page="products">محصولات</a>
+        <a href="#bestsellers" data-page="bestsellers">پرفروش‌ها</a>
+        <a href="#features" data-page="features">امکانات</a><a href="#about" data-page="about">درباره ما</a>
+        <a href="#contact" data-page="contact">تماس با ما</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="page active" id="home">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-copy" dir="rtl">
+            <span class="pill">فروش ویژه</span>
+            <h2>جدیدترین گوشی‌های موبایل</h2>
+            <p>انتخابی مطمئن با بهترین قیمت، ضمانت معتبر و ارسال سریع</p>
+            <button class="primary-btn" data-page="products">مشاهده محصولات <span>←</span></button>
+          </div>
+          <div class="hero-device real-hero-product">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/About_iPhone_15_Pro_Max_Natural_Titanium.jpg?width=1000" alt="آیفون ۱۵ پرو مکس">
+          </div>
+            <div class="glow"></div>
+          </div>
+        </div>
+
+        <div class="section-head">
+          <div><span class="eyebrow">دسته‌بندی‌ها</span><h3>خرید بر اساس دسته‌بندی</h3></div>
+          <a href="#products" data-page="products">مشاهده همه ←</a>
+        </div>
+        <div class="categories">
+          <button class="category-card" data-cat="موبایل"><span>📱</span><b>موبایل</b><small>۸۷ محصول</small></button>
+          <button class="category-card" data-cat="لپ‌تاپ"><span>💻</span><b>لپ‌تاپ</b><small>۴۶ محصول</small></button>
+          <button class="category-card" data-cat="هدفون"><span>🎧</span><b>هدفون و هندزفری</b><small>۳۲ محصول</small></button>
+          <button class="category-card" data-cat="ساعت"><span>⌚</span><b>ساعت هوشمند</b><small>۲۱ محصول</small></button>
+          <button class="category-card" data-cat="لوازم جانبی"><span>🔌</span><b>لوازم جانبی</b><small>۱۲۸ محصول</small></button>
+          <button class="category-card" data-cat="گیمینگ"><span>🎮</span><b>تجهیزات گیمینگ</b><small>۳۵ محصول</small></button>
+          <button class="category-card" data-cat="پلی استیشن"><span>🎮</span><b>پلی‌استیشن</b><small>۱۲ محصول</small></button>
+          <button class="category-card" data-cat="دسته بازی"><span>🕹️</span><b>دسته بازی</b><small>۱۸ محصول</small></button>
+        </div>
+
+        <div class="section-head">
+          <div><span class="eyebrow">پیشنهاد ویژه</span><h3>محصولات پرفروش</h3></div>
+          <a href="#products" data-page="products">همه محصولات ←</a>
+        </div>
+        <div class="products-grid" id="homeProducts"></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="page" id="products">
+      <div class="container">
+        <div class="page-title"><div><span class="eyebrow">فروشگاه</span><h2>همه محصولات</h2></div><span id="resultText"></span></div>
+        <div class="shop-layout">
+          <aside class="filters">
+            <h3>فیلتر محصولات</h3>
+            <label>دسته‌بندی</label>
+            <button class="filter-cat active" data-filter="همه">همه محصولات</button>
+            <button class="filter-cat" data-filter="موبایل">موبایل</button>
+            <button class="filter-cat" data-filter="لپ‌تاپ">لپ‌تاپ</button>
+            <button class="filter-cat" data-filter="هدفون">هدفون</button>
+            <button class="filter-cat" data-filter="ساعت">ساعت هوشمند</button>
+            <button class="filter-cat" data-filter="پلی استیشن">پلی‌استیشن</button>
+            <button class="filter-cat" data-filter="دسته بازی">دسته بازی</button>
+            <button class="filter-cat" data-filter="دوربین">دوربین</button>
+            <button class="filter-cat" data-filter="لوازم جانبی">لوازم جانبی</button>
+            <label>محدوده قیمت</label>
+            <input type="range" min="1000000" max="100000000" value="100000000" id="priceRange">
+            <div class="range-row"><span>۱ میلیون</span><span id="priceValue">۱۰۰ میلیون</span></div>
+          </aside>
+          <div class="product-area"><div class="products-grid" id="allProducts"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT DETAIL -->
+    <section class="page" id="detail">
+      <div class="container">
+        <div class="breadcrumb">خانه ← محصولات ← جزئیات محصول</div>
+        <div class="detail-card">
+          <div class="detail-image"><div class="large-product-icon" id="detailIcon">📱</div><span class="discount">۱۲٪</span></div>
+          <div class="detail-info">
+            <span class="stock">● موجود در انبار</span>
+            <h2 id="detailName">iPhone 15 Pro Max</h2>
+            <div class="stars">★★★★★ <span>(۵۲ نظر)</span></div>
+            <p class="detail-desc">طراحی حرفه‌ای، عملکرد سریع و کیفیت ساخت بالا؛ مناسب برای استفاده روزمره و حرفه‌ای.</p>
+            <div class="detail-price" id="detailPrice">۸۴,۹۰۰,۰۰۰ تومان</div>
+            <div class="options"><b>رنگ:</b><span class="dot dark"></span><span class="dot silver"></span><span class="dot purple"></span></div>
+            <button class="primary-btn" id="detailAdd">افزودن به سبد خرید 🛒</button>
+          </div>
+        </div>
+        <div class="specs">
+          <h3>مشخصات فنی</h3>
+          <div class="spec-grid"><div><span>پردازنده</span><b>Apple A17 Pro</b></div><div><span>حافظه داخلی</span><b>۲۵۶ گیگابایت</b></div><div><span>حافظه RAM</span><b>۸ گیگابایت</b></div><div><span>صفحه نمایش</span><b>۶.۷ اینچ</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CART -->
+    <section class="page" id="cart">
+      <div class="container">
+        <div class="page-title"><div><span class="eyebrow">خرید</span><h2>سبد خرید</h2></div></div>
+        <div id="cartContent"></div>
+      </div>
+    </section>
+
+    <!-- LOGIN -->
+    <section class="page" id="login">
+      <div class="container narrow">
+        <div class="auth-card">
+          <div class="auth-logo"><svg viewBox="0 0 48 48"><path d="M10 8h7l7 9 7-9h7L27 25v15h-6V25L10 8z"/></svg></div>
+          <h2>ورود به یوسفی استور</h2><p>برای ادامه شماره موبایل یا ایمیل خود را وارد کنید.</p>
+          <input placeholder="شماره موبایل یا ایمیل">
+          <input type="password" placeholder="رمز عبور">
+          <button class="primary-btn full" onclick="showToast('ورود با موفقیت انجام شد')">ورود</button>
+          <div class="divider">یا</div>
+          <button class="outline-btn full" data-page="register">ایجاد حساب کاربری</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTER -->
+    <section class="page" id="register">
+      <div class="container narrow">
+        <div class="auth-card">
+          <div class="auth-logo"><svg viewBox="0 0 48 48"><path d="M10 8h7l7 9 7-9h7L27 25v15h-6V25L10 8z"/></svg></div>
+          <h2>ثبت‌نام در یوسفی استور</h2><p>یک حساب کاربری بسازید و خرید را شروع کنید.</p>
+          <input placeholder="نام و نام خانوادگی">
+          <input placeholder="شماره موبایل">
+          <input type="password" placeholder="رمز عبور">
+          <button class="primary-btn full" onclick="showToast('حساب کاربری ایجاد شد')">ثبت‌نام</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BESTSELLERS -->
+    <section class="page" id="bestsellers">
+      <div class="container">
+        <div class="page-title"><div><span class="eyebrow">محبوب‌ترین انتخاب‌ها</span><h2>پرفروش‌های یوسفی استور</h2></div><span>محصولات محبوب این هفته</span></div>
+        <div class="bestseller-note">این بخش فقط محصولات پرفروش را نمایش می‌دهد و با دسته‌بندی محصولات فروشگاه متفاوت است.</div>
+        <div class="products-grid" id="bestProducts"></div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="page" id="features">
+      <div class="container">
+        <div class="page-title"><div><span class="eyebrow">امکانات</span><h2>قابلیت‌های یوسفی استور</h2></div></div>
+        <div class="feature-grid">
+          <div class="feature"><span>🔎</span><h3>جست‌وجوی سریع</h3><p>پیدا کردن محصولات در کوتاه‌ترین زمان.</p></div>
+          <div class="feature"><span>🛒</span><h3>سبد خرید</h3><p>مدیریت آسان محصولات انتخاب‌شده.</p></div>
+          <div class="feature"><span>📦</span><h3>ثبت سفارش</h3><p>تکمیل اطلاعات و ثبت آنلاین سفارش.</p></div>
+          <div class="feature"><span>🛡️</span><h3>خرید مطمئن</h3><p>نمایش وضعیت موجودی و اطلاعات محصول.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="about">
+      <div class="container narrow"><div class="text-card"><span class="eyebrow">درباره ما</span><h2>Yousefi Store</h2><p>یوسفی استور یک نمونه فروشگاه اینترنتی ایرانی با تمرکز بر تجربه خرید ساده، سریع و قابل اعتماد است. این وب‌سایت به عنوان پروژه دانشگاهی طراحی شده و قابلیت توسعه به یک فروشگاه کامل را دارد.</p></div></div>
+    </section>
+    <section class="page" id="contact">
+      <div class="container narrow"><div class="text-card"><span class="eyebrow">تماس با ما</span><h2>در کنار شما هستیم</h2><p>برای پرسش‌ها و پیشنهادهای خود می‌توانید از فرم تماس یا اطلاعات ارتباطی فروشگاه استفاده کنید.</p><div class="contact-box">📞 ۰۲۱-۱۲۳۴۵۶۷۸ &nbsp;&nbsp; ✉️ info@yousefistore.ir</div></div></div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><div class="brand"><span class="brand-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 8h7l7 9 7-9h7L27 25v15h-6V25L10 8z"/></svg></span><span><strong>Yousefi Store</strong><small>تجربه‌ای متفاوت در خرید</small></span></div><p>© تمامی حقوق برای یوسفی استور محفوظ است.</p></div></footer>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
